@@ -1,0 +1,10 @@
+{
+	"name": "portfolio",
+	"portfolio": {
+		"id": "/portfolio",
+        "thumb": "https://neryxomka.com/wcharge/img/welcome.png",
+        "thumbs": ["https://neryxomka.com/wcharge/img/welcome.png"],
+		"description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+		"name": "andrey.lizivinskiy"
+	}
+}

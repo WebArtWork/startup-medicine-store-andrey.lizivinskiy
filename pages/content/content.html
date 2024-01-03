@@ -1,0 +1,21 @@
+<div class="wrapper">
+	<div class="content">
+		{{{'/templates/andrey.lizivinskiy/components/topbar'|c({website: website})|safe}}}
+		<div class="top">
+			<div class="container">
+				<div class="article-o__list">
+					<div class="article-o__main-img">
+						<img src="{{{thumb}}}" alt="{{{name}}}">
+					</div>
+					<div class="article-o__main-title">
+						{{{name}}}
+					</div>
+					<pre class="article-o__description">
+						{{{content|safe}}}
+					</pre>
+				</div>
+			</div>
+		</div>
+	</div>
+	{{{'/templates/andrey.lizivinskiy/components/footer'|c({data: store.data, footer: footer})|safe}}}
+</div>

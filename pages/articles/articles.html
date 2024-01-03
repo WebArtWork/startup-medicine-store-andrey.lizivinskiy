@@ -1,0 +1,32 @@
+<div class="wrapper">
+	<div class="content">
+        {{{'/templates/andrey.lizivinskiy/components/topbar'|c({website: website})|safe}}}
+        <div class="top">
+            <div class="container">
+                <div class="article__main-title global-title">
+					Статті
+                </div>
+                <div class="article__list">
+					{% for article in articles %}
+                    <div class="article__wrap">
+                        <a href="/article/{{{article.id}}}" class="article__item">
+                            <div class="article__img">
+                                <img src="{{{article.thumb}}}" alt="{{{article.name}}}">
+                            </div>
+                            <div class="article__text">
+                                <div class="article__title">
+									{{{article.name}}}
+                                </div>
+                                <div class="article__description">
+									{{{article.short}}}
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+					{% endfor %}
+                </div>
+            </div>
+        </div>
+	</div>
+	{{{'/templates/andrey.lizivinskiy/components/footer'|c({data: store.data, footer: footer})|safe}}}
+</div>

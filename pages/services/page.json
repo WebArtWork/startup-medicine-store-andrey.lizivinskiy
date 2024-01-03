@@ -1,0 +1,23 @@
+{
+	"name": "services",
+	"services": [
+		{
+			"id": "/service",
+			"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+			"thumb": "https://neryxomka.com/wcharge/img/welcome.png",
+			"name": "service"
+		},
+		{
+			"id": "/service",
+			"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+			"thumb": "https://neryxomka.com/wcharge/img/welcome.png",
+			"name": "service"
+		},
+		{
+			"id": "/service",
+			"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+			"thumb": "https://neryxomka.com/wcharge/img/welcome.png",
+			"name": "service"
+		}
+	]
+}

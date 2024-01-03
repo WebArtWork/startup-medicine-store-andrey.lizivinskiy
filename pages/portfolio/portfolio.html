@@ -1,0 +1,73 @@
+<div class="wrapper">
+	<div class="content">
+        {{{'/templates/andrey.lizivinskiy/components/topbar'|c({website: website})|safe}}}
+        <div class="top">
+            <div class="container">
+                <div class="article__main-title global-title">
+					Робота
+                </div>
+                <div id="page" class="estate__wrap">
+                    <div class="estate__slider">
+                        <div class="column small-11 small-centered">
+                            <div class="slider slider-single">
+                                <div><img src="{{{portfolio.thumb}}}" alt="{{{portfolio.name}}}"></div>
+								{% for thumb in portfolio.thumbs %}
+                                <div><img src="{{{thumb}}}" alt="{{{portfolio.name}}}"></div>
+								{% endfor %}
+                            </div>
+                            <div class="slider slider-nav">
+                                <div><img src="{{{portfolio.thumb}}}" alt="{{{portfolio.name}}}"></div>
+								{% for thumb in portfolio.thumbs %}
+                                <div><img src="{{{thumb}}}" alt="{{{portfolio.name}}}"></div>
+								{% endfor %}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="estate__info">
+                        <div class="estate__title">
+                            {{{portfolio.name}}}
+                        </div>
+                        <pre class="estate__description">{{{portfolio.description}}}</pre>
+                        <!--
+                        <div class="estate__details-wrap">
+                            <div class="estate__details-item">
+                                <div class="estate__details-img">
+                                    <img src="/andrey.lizivinskiy/img/icons/area.svg" alt="">
+                                </div>
+                                <div class="estate__details-text">
+                                    12312321312
+                                </div>
+                            </div>
+                            <div class="estate__details-item">
+                                <div class="estate__details-img">
+                                    <img src="/andrey.lizivinskiy/img/icons/price.svg" alt="">
+                                </div>
+                                <div class="estate__details-text">
+                                    12312321312
+                                </div>
+                            </div>
+                            <div class="estate__details-item">
+                                <div class="estate__details-img">
+                                    <img src="/andrey.lizivinskiy/img/icons/locb.svg" alt="">
+                                </div>
+                                <div class="estate__details-text">
+                                    12312321312
+                                </div>
+                            </div>
+                            <div class="estate__details-item">
+                                <div class="estate__details-img">
+                                    <img src="/andrey.lizivinskiy/img/icons/floor.svg" alt="">
+                                </div>
+                                <div class="estate__details-text">
+                                    12312321312
+                                </div>
+                            </div>
+                        </div>
+                        -->
+                    </div>
+                </div>
+            </div>
+        </div>
+	</div>
+	{{{'/templates/andrey.lizivinskiy/components/footer'|c({data: store.data, footer: footer})|safe}}}
+</div>

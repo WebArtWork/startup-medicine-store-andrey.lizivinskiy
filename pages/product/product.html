@@ -1,0 +1,67 @@
+<div class="wrapper">
+	<div class="content">
+        {{{'/templates/andrey.lizivinskiy/components/topbar'|c({website: website})|safe}}}
+        <div class="top">
+            <div class="container">
+                <div class="article__main-title global-title">
+					Продукт
+                </div>
+                <div id="page" class="estate__wrap">
+					<div class="estate__slider">
+						<div class="column small-11 small-centered">
+							<div class="slider slider-single">
+								<div><img src="{{{product.thumb}}}" alt="{{{product.name}}}"></div>
+								 {% for thumb in product.thumbs %}
+								<div><img src="{{{thumb}}}" alt="{{{product.name}}}"></div>
+								{% endfor %}
+							</div>
+							<div class="slider slider-nav">
+								<div><img src="{{{product.thumb}}}" alt="{{{product.name}}}"></div>
+								{% for thumb in product.thumbs %}
+								<div><img src="{{{thumb}}}" alt="{{{product.name}}}"></div>
+								{% endfor %}
+							</div>
+						</div>
+					</div>
+                    <div class="estate__info">
+                        <div class="estate__title">
+                            {{{product.name}}}
+                        </div>
+                        <div class="estate__description">
+                            {{{product.description}}}
+                        </div>
+                        <!-- <div class="estate__details-wrap">
+                            <div class="estate__details-item">
+                                <div class="estate__details-img">
+                                    <img src="/andrey.lizivinskiy/img/icons/area.svg" alt="">
+                                </div>
+                                <div class="estate__details-text">
+                                    12312321312
+                                </div>
+                            </div>
+                            <div class="estate__details-item">
+                                <div class="estate__details-img">
+                                    <img src="/andrey.lizivinskiy/img/icons/price.svg" alt="">
+                                </div>
+                                <div class="estate__details-text">
+                                    12312321312
+                                </div>
+                            </div>
+                        </div> -->
+                        <div class="product__btn-wrap product__btn-wrap--width">
+                            <div class="product__btn-text">
+								{{{product.price}}}
+                            </div>
+							{% if website %}
+                            <a href="https://{{{website}}}/order/product/{{{product.id}}}" class="product__btn-cart">
+                                <img src="/andrey.lizivinskiy/img/icons/cart.svg" alt="">
+                            </a>
+							{% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</div>
+	{{{'/templates/andrey.lizivinskiy/components/footer'|c({data: store.data, footer: footer})|safe}}}
+</div>

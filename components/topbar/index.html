@@ -1,0 +1,28 @@
+<header class="header">
+	<div class="container">
+		<div class="header__wrap">
+			<div class="header__logo">
+				<a href="">
+					<img src="/andrey.lizivinskiy/img/logo.svg" alt="">
+				</a>
+			</div>
+			<div class="burger-wrap">
+				<div class="burger"></div>
+			</div>
+			<ul class="header__navigation">
+				<li><a href="/portfolios">Роботи</a></li>
+				<li><a href="/services">Послуги</a></li>
+				<li><a href="/products">Продукція</a></li>
+				<li><a href="/articles">Статті</a></li>
+			</ul>
+			{% if website %}
+			<a href="https://{{{website}}}/profile" class="header__user">
+				<svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M19.9998 24C25.5139 24 29.984 18.6274 29.984 12C29.984 5.37258 25.5139 0 19.9998 0C14.4857 0 10.0156 5.37258 10.0156 12C10.0156 18.6274 14.4857 24 19.9998 24Z" fill="white"/>
+					<path d="M39.569 34.2C37.7718 30.6 34.3772 27.6 29.9842 25.8C28.7861 25.4 27.3883 25.4 26.3899 26C24.393 27.2 22.3962 27.8 20 27.8C17.6038 27.8 15.607 27.2 13.6101 26C12.6117 25.6 11.2139 25.4 10.0158 26C5.62278 27.8 2.22815 30.8 0.431001 34.4C-0.966785 37 1.22974 40 4.22499 40H35.775C38.7703 40 40.9668 37 39.569 34.2Z" fill="white"/>
+				</svg>
+			</a>
+			{% endif %}
+		</div>
+	</div>
+</header>

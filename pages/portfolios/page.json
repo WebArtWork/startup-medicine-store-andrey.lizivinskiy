@@ -1,0 +1,29 @@
+{
+	"name": "portfolios",
+	"portfolios": [
+		{
+			"id": "/portfolio",
+			"thumb": "https://neryxomka.com/wcharge/img/welcome.png",
+			"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+			"name": "andrey.lizivinskiy"
+		},
+		{
+			"id": "/portfolio",
+			"thumb": "https://neryxomka.com/wcharge/img/welcome.png",
+			"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+			"name": "andrey.lizivinskiy"
+		},
+		{
+			"id": "/portfolio",
+			"thumb": "https://neryxomka.com/wcharge/img/welcome.png",
+			"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+			"name": "andrey.lizivinskiy"
+		},
+		{
+			"id": "/portfolio",
+			"thumb": "https://neryxomka.com/wcharge/img/welcome.png",
+			"short": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do.",
+			"name": "andrey.lizivinskiy"
+		}
+	]
+}

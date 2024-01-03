@@ -1,0 +1,32 @@
+<div class="wrapper">
+	<div class="content">
+        {{{'/templates/andrey.lizivinskiy/components/topbar'|c({website: website})|safe}}}
+        <div class="top">
+            <div class="container">
+                <div class="article__main-title global-title">
+					Роботи
+                </div>
+                <div class="portfolio__list">
+					{% for portfolio in portfolios %}
+                    <div class="portfolio__wrap">
+                        <a href="/portfolio/{{{portfolio.id}}}" class="portfolio__item">
+                            <div class="portfolio__img">
+                                <img src="{{{portfolio.thumb}}}" alt="{{{portfolio.name}}}">
+                            </div>
+                            <div class="portfolio__info">
+                                <div class="portfolio__title">
+									{{{portfolio.name}}}
+                                </div>
+                                <div class="portfolio__description">
+									{{{portfolio.short}}}
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+					{% endfor %}
+                </div>
+            </div>
+        </div>
+	</div>
+	{{{'/templates/andrey.lizivinskiy/components/footer'|c({data: store.data, footer: footer})|safe}}}
+</div>

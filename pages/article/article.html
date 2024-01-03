@@ -1,0 +1,24 @@
+<div class="wrapper">
+	<div class="content">
+        {{{'/templates/andrey.lizivinskiy/components/topbar'|c({website: website})|safe}}}
+        <div class="top">
+			<div class="container">
+				<div class="article-o__list">
+					<div class="article-o__main-img">
+						<img src="{{{article.thumb}}}" alt="{{{article.name}}}">
+					</div>
+					<div class="article-o__main-title">
+						{{{article.name}}}
+					</div>
+					<pre class="article-o__description">
+						{{{article.description|safe}}}
+					</pre>
+					{% if article.reference %}
+					<a href="{{{article.reference}}}">{{{article.reference}}}</a>
+					{% endif %}
+				</div>
+			</div>
+		</div>
+	</div>
+	{{{'/templates/andrey.lizivinskiy/components/footer'|c({data: store.data, footer: footer})|safe}}}
+</div>
